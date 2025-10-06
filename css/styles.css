@@ -1,0 +1,129 @@
+:root{
+    --principal: #7f5539;
+    --segundo:#F8E8D0;
+    --accent:hsl(25, 76%, 31%);
+    --texto1: #414833;
+    --texto2: #fff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: var(--texto1);
+    background-color: var(--principal);
+}
+.contenedor{
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+}
+h1,h2,h3{
+    margin-bottom: 1rem;
+    color: var(--texto1);
+}
+h1{
+    font-size: 2rem;
+    font-weight: 700;
+}
+h2{
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+p{
+    margin-bottom: 1rem;
+}
+.btn,
+#Ordenar{
+    display: inline-block;
+    background-color: var(--accent);
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition:background-color 0.3s ease;
+    border:none;
+    cursor: pointer;
+}
+.btn:hover, 
+.Ordenar:hover{
+    background-color: #a0522d;
+}
+header .contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--segundo);
+}
+.logo img{
+    height: 0px;
+    margin-right: 10px;
+    filter: invert(90%);
+    border-radius: 90%;
+}
+.nav ul{
+    list-style: none;
+    display: flex;
+}
+.nav ul li{
+    margin-left: 2rem;
+}
+.nav ul li a{
+    color: var(--segundo);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+.nav ul li a:hover{
+    color: var(--accent);
+}
+.Ordenar{
+    margin-left: 2rem;
+}
+.menu{
+    display: none;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: var(--segundo);
+}
+.hero{
+    background-color: var(--segundo);
+    padding: 4rem 0;
+    text-align: center;
+    border-radius: 15px;
+    margin: 4rem auto;
+    width: calc(100%-2rem);
+    max-width: 1250px;
+}
+.hero .contenedor{
+    display: flex;
+    flex-direction: column;/*para el celular*/
+    align-items: center;
+    gap: 2rem;
+    text-align: left;
+}
+.hero-contenedor{
+    flex: 1;
+    text-align: center;
+}
+.hero-contenedor h1{
+    color: var(--principal);
+    font-size: 2.8rem;
+    line-height: 1.2;
+}
+.hero-contenedor{
+    color: var(--texto1);
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
