@@ -1,9 +1,9 @@
 :root{
-    --principal: #7f5539;
+    --principal: #3d2a1d;
     --segundo:#F8E8D0;
     --accent:hsl(25, 76%, 31%);
-    --texto1: #414833;
-    --texto2: #fff;
+    --texto1: #0f0f0f;
+    --texto2: #382819;
 }
 *{
     margin: 0;
@@ -14,7 +14,14 @@ body{
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
     color: var(--texto1);
-    background-color: var(--principal);
+   font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: /*linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), */
+                url('../img/fondob.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;   
 }
 .contenedor{
     max-width: 1200px;
@@ -41,7 +48,7 @@ p{
 .btn,
 #Ordenar{
     display: inline-block;
-    background-color: var(--accent);
+    background-color: var(--principal);
     padding: 0.8rem 1.5rem;
     border-radius: 25px;
     text-decoration: none;
@@ -49,11 +56,14 @@ p{
     transition:background-color 0.3s ease;
     border:none;
     cursor: pointer;
+    color: var(--segundo);
 }
-.btn:hover, 
-.Ordenar:hover{
-    background-color: #a0522d;
+
+    .Ordenar:hover {
+    color: var(--accent);             
+    
 }
+
 header .contenedor{
     display: flex;
     justify-content: space-between;
@@ -84,21 +94,25 @@ header .contenedor{
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s ease;
+
 }
 .nav ul li a:hover{
     color: var(--accent);
 }
 .Ordenar{
     margin-left: 2rem;
+    color: var(--segundo);
+    text-decoration: none;
+    font-weight: 700;
 }
 .menu{
     display: none;
     font-size: 1.8rem;
     cursor: pointer;
     color: var(--segundo);
+
 }
 .hero{
-    background-color: var(--segundo);
     padding: 4rem 0;
     text-align: center;
     border-radius: 15px;
@@ -112,13 +126,16 @@ header .contenedor{
     align-items: center;
     gap: 2rem;
     text-align: left;
+   background-color: rgba(234, 210, 181, 0.521); 
+    border-radius: 30px;
+    
 }
 .hero-contenedor{
     flex: 1;
     text-align: center;
 }
 .hero-contenedor h1{
-    color: var(--principal);
+    color: var(--texto2);
     font-size: 2.8rem;
     line-height: 1.2;
 }
@@ -126,4 +143,79 @@ header .contenedor{
     color: var(--texto1);
     font-size: 1.1rem;
     margin-bottom: 1.5rem;
+}
+.btn:hover{
+    color: var(--principal);
+    background-color: var(--segundo);
+}
+.Favoritos{
+    padding: 80px 0;
+    background-color: rgba(255, 255, 255, 0.356);
+    color: var(--segundo);
+}
+.Favoritos h2{
+    text-emphasis: center;
+    color: var(--principal);
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+}
+.Favoritos h3{
+    color: var(--segundo);
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+.productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+.producto{
+    background-color: var(--principal);
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    width: 230px;
+    box-shadow: 0 4px 10px rgba(234, 210, 181, 0.5);
+    transition: transform 0.3,box-shadow;
+}
+.producto:hover{
+    transform: translatey(-10px);
+    box-shadow: rgba(234, 210, 181, 0.5);
+
+}
+.producto img{
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    float: center;
+}
+.producto p{
+    font-size: 0.9rem;
+    color: var(--segundo);
+    margin-bottom: 10px;
+}
+.producto .precio{
+    font-weight: 700;
+    color: #caa008;
+    font-size: 1.2rem;
+    margin: 10px;
+}
+.producto .agregar{
+    background-color: #F8E8D0;
+    color: #382819;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+.producto .agregar :hover{
+    background-color: #8b6e05;
+    color: #faf7f7;
+}
+.agregar:hover{
+    background-color: #e6c200;
+    color: #fff;
 }
