@@ -247,3 +247,91 @@ header .contenedor{
     background-color: #e6c200;
     color: #fff;
 }
+.Ofertas{
+    background-color: var(--principal);
+    padding: 50px 0px;
+    text-align: center;
+}
+.Ofertas h2{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.5rem;
+    color: var(--segundo);
+}
+.ofertass{
+   display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    align-items: stretch;
+}
+.Oferta{
+    background-color: var(--segundo);
+    border-radius: 20px;
+    padding: 10px;
+    height: 450px;
+    text-align: center;
+    width: 230px;
+    box-shadow: 0 4px 10px rgba(234, 210, 181, 0.5);
+    transition: transform 0.3,box-shadow;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+.Oferta:hover {
+    transform: translateY(-10px);
+    box-shadow: rgba(234, 210, 181, 0.5);
+
+}
+.Oferta img{
+    width: 100%;
+    height: 200px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    float: center;
+    object-fit: cover;
+}
+.Oferta h3{
+    margin: 15px 0 10px;
+    color: var(--principal);
+}
+.Oferta p{
+    font-size: 0.9rem;
+    color: var(--principal);
+    margin-bottom: 10px;
+    max-height: 3.9em; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 3.9em;
+    overflow-y: auto; 
+    scrollbar-width: thin; 
+    scrollbar-color:  #f4dfdf var(--segundo);
+}
+.Oferta .precio{
+    font-weight: 700;
+    color: #caa008;
+    font-size: 0.8rem;
+    margin: 10px;
+}
+.Oferta .agregar{
+    background-color: var(--principal);
+    color: var(--segundo);
+    border: none;
+    padding: 8px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s;
+    margin-top: auto;
+    justify-content: center;
+    align-items: center;
+}
+.Oferta .agregar :hover{
+    background-color: #8b6e05;
+    color: #faf7f7;
+}
+.agregar:hover{
+    background-color: #e6c200;
+    color: #fff;
+}
+
