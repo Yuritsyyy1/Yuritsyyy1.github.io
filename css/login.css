@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: linear-gradient(135deg,#3d2a1d,#F8E8D0);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fondo img{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    filter: blur(6px) brightness(0.8);
+    z-index: 0;
+}
+@keyframes feBlend{
+    from{opacity: 0; transform: translateY(-20px);}
+    to{opacity: 1;transform: translateY(0);}
+}
+.contenedor{
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: #3d2a1d;
+}
+.caja {
+    background: #F8E8D0;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
+    padding: 40px;
+    width: 350px;
+    text-align: center;
+    animation: fadeIn 1s ease;
+}
+.grupo input:focus{
+    border-color: #8B4513;
+    box-shadow: 0 0 5px rgb(139, 69, 19, 0.5);
+}
+.login{
+    background-color:#3d2a1d;
+    color: #F8E8D0;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3px;
+    width: 100%;
+    margin-top: 10px;
+}
+.login:hover{
+    background-color: #7f6a5c;
+}
+.Registro{
+    margin-top: 15px;
+    font-size: 15px;
+    color:#3d2a1d;
+}
+.registro{
+    margin-top: 15px;
+    font-size: 15px;
+    color:#3d2a1d;
+}
+.registro a:hover{
+    text-decoration: underline;
+}
+.volver {
+    display: inline-block;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #4A2C2A;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.volver:hover {
+    color: #8B4513;
+}
+.user{
+    background-color: #3d2a1d;
+    border: none;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    color: white;
+}
+.passs{
+    background-color: #3d2a1d;
+    border: none;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    color: white;
+    
+
+}
+
+.usser{
+   font-size: 0.9rem;
+}
+.pass{
+   font-size: 0.9rem;
+}
