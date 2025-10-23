@@ -23,9 +23,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;   
 }
-.Cuerpo .contenedor{
-    display: flex;
-}
+
 .contenedor{
     max-width: 1200px;
     margin: auto;
@@ -72,12 +70,14 @@ header .contenedor{
     justify-content: space-between;
     align-items: center;
 }
+
 .logo{
 
     display: flex;
     align-items: center;
     font-size: 1.5rem;
     font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: var(--segundo);
 }
 .logo img{
