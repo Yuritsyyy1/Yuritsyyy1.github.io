@@ -25,7 +25,6 @@ body{
 }
 
 .contenedor{
-    max-width: 1200px;
     margin: auto;
     padding: 1rem;
 }
@@ -60,7 +59,7 @@ p{
     color: var(--segundo);
 }
 
-    .Ordenar:hover {
+.Ordenar:hover {
     color: var(--accent);             
     
 }
@@ -179,11 +178,9 @@ header .contenedor{
     font-weight: 700;
 }
 .productos{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
-    align-items: stretch;
 }
 .producto{
     background-color: var(--principal);
@@ -262,11 +259,10 @@ header .contenedor{
     color: var(--segundo);
 }
 .ofertass{
-   display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 30px;
-    align-items: stretch;
+    align-items: center;
 }
 .Oferta{
     background-color: var(--segundo);
