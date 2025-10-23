@@ -1,31 +1,124 @@
-@media (max-width:600px){
-    header .cononedor{
-        flex-direction: column;
-        text-align: center;
-        gap: 15px;
 
+@media (max-width: 1024px) {
+    
+        header .contenedor {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        gap: 1rem;
     }
-    .nav{
-        display: none;
+    .nav ul {
+        display: flex;
+        gap: 0.5rem;
     }
-    .menu{
+
+    .Iniciar,
+    .Ordenar {
+        margin: 0.5rem 0;
+    }
+}
+    body {
+        padding-left: 0;
+    }
+
+    .Ofertas {
+        padding: 40px 0;
+        margin-left: 0;
+    }
+
+    .ofertass {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .Oferta {
+        width: 45%; 
+        height: auto;
+    }
+
+    .Oferta img {
+        height: 180px;
+    }
+
+    .Favoritos .producto {
+        width: 45%;
+    }
+    .hero .contenedor{
+        width: 50px;
+    }
+
+
+@media (max-width: 768px) {
+    body {
+        padding-left: 0;
+    }
+
+    header .contenedor {
+        font-size: 0.8rem;
+        align-items: center;
+    }
+
+    .menu {
         display: block;
     }
-    .Ordenar, 
-    .Iniciar{
-        padding: 8px 14px;
-        font-size: 1.2rem;
+
+    .nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: var(--principal);
+        width: 100%;
+        border-radius: 10px;
+        padding: 1rem;
     }
-    .herp{
-        padding: 60px 15px;
+
+    .nav ul li {
+        margin: 10px 0;
+        text-align: center;
     }
-    .hero-contenedor h1{
-        font-size: 1.5rem;
+
+    .hero .contenedor {
+        width: 300px;
+        padding: 1.5rem;
+        text-align: center;
     }
-    .productos{
-        grid-template-columns: 1fr;
+
+    .Favoritos,
+    .Ofertas {
+        padding: 40px 10px;
+        margin-left: 0;
     }
-    .producto img{
+
+    .ofertass {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .Oferta {
+        width: 48%; 
+        height: auto;
+    }
+
+    .producto {
+        width: 90%;
+        height: auto;
+    }
+
+    .producto img,
+    .Oferta img {
         height: 160px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    .btn,
+    #Ordenar {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
     }
 }

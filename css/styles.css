@@ -14,15 +14,17 @@ body{
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
     color: var(--texto1);
-   font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background: /*linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.4)), */
-                url('../img/fondob.jpg'); 
-                width: 100%;
+    background: linear-gradient(90deg, #F8E8D0 -20%, #4A2C2A 0%, #3d2a1d 100%); padding-left: 50px;         
+    width: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;   
+}
+.Cuerpo .contenedor{
+    display: flex;
 }
 .contenedor{
     max-width: 1200px;
@@ -71,6 +73,7 @@ header .contenedor{
     align-items: center;
 }
 .logo{
+
     display: flex;
     align-items: center;
     font-size: 1.5rem;
@@ -161,12 +164,12 @@ header .contenedor{
 }
 .Favoritos{
     padding: 80px 0;
-    background-color: rgba(255, 255, 255, 0.356);
+   
     color: var(--segundo);
 }
 .Favoritos h2{
     text-emphasis: center;
-    color: var(--principal);
+    color: var(--segundo);
     margin-bottom: 50px;
     font-size: 2.5rem;
 }
@@ -249,7 +252,6 @@ header .contenedor{
     color: #fff;
 }
 .Ofertas{
-    background-color: var(--principal);
     padding: 50px 0px;
     text-align: center;
 }
@@ -286,7 +288,7 @@ header .contenedor{
 }
 .Oferta img{
     width: 100%;
-    height: 200px;
+    height: auto;
     border-radius: 15px;
     margin-bottom: 10px;
     float: center;
